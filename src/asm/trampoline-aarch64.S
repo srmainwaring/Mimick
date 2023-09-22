@@ -77,4 +77,7 @@ ret_ctx:
 MANGLE(mmk_trampoline_end):
     nop
 
-.section  .note.GNU-stack, "", @progbits
+/*
+ * Not compatible with clang / macOS arm64
+ * .section  .note.GNU-stack, "", @progbits
+ */
